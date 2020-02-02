@@ -16,6 +16,7 @@ docker ps -q --filter status=exited
 
 ### コンテナをコミット
 docker commit -m "exited" コンテナID
+
 3f3898912205d15bb8e2ac605036da1b76d2ecaf67eb77031364b4f94b704dca　←実行するとでてくる
 
 ## コンテナへ接続

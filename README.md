@@ -6,6 +6,10 @@ docker-compose build
 ## Dockerコンテナの作成
 docker-compose up -d
 
+-----
+
+# うまくいかない時はコミットしてイメージ作成、イメージそのものを起動して確認
+
 ## コンテナをコミットする必要があるので以下コマンドを実行する
 ### エラーのでているコンテナIDを取得
 docker ps -q --filter status=exited

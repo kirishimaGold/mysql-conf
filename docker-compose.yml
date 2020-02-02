@@ -3,12 +3,13 @@ mysql:
   dockerfile: Dockerfile-MySQL
   environment:
     MYSQL_ROOT_PASSWORD: mysql
-    MYSQL_USER: user
+    MYSQL_USER: root
     MYSQL_PASSWORD: mysql
-    MYSQL_DATABASE: local_db    #作成するDB名
+    MYSQL_DATABASE: local_db
     TZ: "Asia/Tokyo"
   container_name: local_db
   ports:
     - 3306:3306
   volumes:
     - ./db:/var/lib/mysql
+  user: root
